@@ -62,10 +62,10 @@
 
 (defn ^:private structured-error-map
   "Converts an error map and extra data about location, path, etc. into the
-  correct format:  top level keys :message, :path, and :location, and anything else
-  under a :extensions key."
+  correct format:  top level keys :message, :path, :location, :code, and anything else
+  under a :extensions key. :code is at the top for backward compatibility reason."
   [error-map extra-data]
-  (let [{:keys [message extensions]} error-map
+  (let [{:keys [message extensions code]} error-map
         {:keys [locations path]} extra-data
         extensions' (merge (dissoc error-map :message :extensions)
                            (dissoc extra-data :locations :path)
@@ -73,6 +73,7 @@
     (cond-> {:message message
              :locations locations
              :path path}
+            (integer? code) (assoc :code code)
       (seq extensions') (assoc :extensions extensions'))))
 
 (defn ^:private enhance-errors
