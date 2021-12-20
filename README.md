@@ -1,9 +1,7 @@
 # Lacinia
 
 
-[![Clojars Project](https://img.shields.io/clojars/v/com.walmartlabs/lacinia.svg)](https://clojars.org/com.walmartlabs/lacinia)
-
-[![CircleCI](https://circleci.com/gh/walmartlabs/lacinia/tree/master.svg?style=svg)](https://circleci.com/gh/walmartlabs/lacinia/tree/master)
+[![Clojars Project](https://img.shields.io/clojars/v/com.hortau/lacinia.svg)](https://clojars.org/com.hortau/lacinia)
 
 [Lacinia Manual](http://lacinia.readthedocs.io/en/latest/) |
 [Lacinia Tutorial](http://lacinia.readthedocs.io/en/latest/tutorial) |
@@ -232,6 +230,7 @@ More details are [in the manual](http://lacinia.readthedocs.io/en/latest/clojure
 ## License
 
 Copyright © 2017-2018 WalmartLabs
+Copyright © 2021 Hortau
 
 Distributed under the Apache License, Version 2.0.
 
