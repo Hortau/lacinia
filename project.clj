@@ -1,6 +1,6 @@
 (defproject com.walmartlabs/lacinia "0.35.0"
   :description "A GraphQL server implementation in Clojure"
-  :url "https://github.com/walmartlabs/lacinia"
+  :url "https://github.com/hortau/lacinia"
   :license {:name "Apache, Version 2.0"
             :url "http://www.apache.org/licenses/LICENSE-2.0"}
   :plugins [[lein-codox "0.10.3"]
