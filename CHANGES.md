@@ -106,6 +106,9 @@ and ``with-warning``.
 
 [Closed Issues](https://github.com/walmartlabs/lacinia/milestone/19?closed=1)
 
+## 0.30.1 -- 24 Sep 2021
+
+Add `:code` in the error maps at the top level for backward compatibility, you should use the one in `:extensions.
 
 ## 0.30.0 -- 1 Oct 2018
 
