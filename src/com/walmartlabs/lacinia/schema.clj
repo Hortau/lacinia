@@ -42,7 +42,7 @@
 ;; When using Clojure 1.8, the dependency on clojure-future-spec must be included,
 ;; and this code will trigger
 (when (-> *clojure-version* :minor (< 9))
-  (require '[clojure.future :refer [any? simple-keyword? simple-symbol?]]))
+  (require '[clojure.future :refer [any? simple-keyword? simple-symbol? boolean?]]))
 
 (defrecord CompiledSchema [])
 
